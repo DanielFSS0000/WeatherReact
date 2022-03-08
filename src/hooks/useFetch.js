@@ -14,7 +14,7 @@ const useFetch = () => {
         const success = position => {
             const lat = position.coords.latitude
             const lon = position.coords.longitude
-            axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=281ecd083a52548047a80a2793057c7b`)
+            axios.get(`api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`)
                 .then(res => setData(res.data))
         }
         
