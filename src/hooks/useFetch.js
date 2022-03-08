@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import React from 'react';
 import getCurrentDate from '../helpers/Date';
 
 const useFetch = () => {
@@ -14,7 +13,7 @@ const useFetch = () => {
         const success = position => {
             const lat = position.coords.latitude
             const lon = position.coords.longitude
-            axios.get(`api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`)
+            axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=5c25183e0207c177545c1470e8161d0c`)
                 .then(res => setData(res.data))
         }
         

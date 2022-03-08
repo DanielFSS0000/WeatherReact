@@ -1,8 +1,5 @@
 import React from 'react';
 import useFetch from '../hooks/useFetch';
-import Date from '../helpers/Date';
-import getCurrentDate from '../helpers/Date';
-import termometro from '../images/termometro.png'
 import frio from '../images/tempmin.png';
 import calor from '../images/tempmax.png';
 
